@@ -7,13 +7,12 @@
 }
 
 
-body {
+section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     box-sizing: border-box;
-    
 }
 
 section .program-title {
