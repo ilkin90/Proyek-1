@@ -1,7 +1,302 @@
-@import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: "Roboto", sans-serif;
+}
+
+.main-footer {
+    font-family: Arial, sans-serif;
+    background-color: #EFEFEF;
+}
+
+.feedback-section {
+    padding: 20px;
+}
+
+.course-stats {
+    width: 257px;
+    height: 40px;
+    margin-top: 20px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.course-stats span {
+    font-size: 26px;
+    font-weight: bold;
+    color: #333;
+}
+
+.feedback-card {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    max-width: 400px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.feedback-text {
+    font-size: 14px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.user-image {
+    width: 80px;
+    height: 84px;
+    border-radius: 50%;
+}
+
+.user-details {
+    text-align: left;
+}
+
+.user-name {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    font-weight: bold;
+}
+
+.fb-logo {
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+/* Kurs bilgisi */
+.course-info {
+    padding: 30px;
+    background-color: #9DC9C8;
+    color: #000;
+}
+
+.course-info h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 60px;
+}
+
+.price {
+    font-size: 12px;
+    margin: 10px 0;
+}
+
+.price span {
+    font-size: 37px;
+    display: block;
+    margin-top: 5px;
+    margin-bottom: 50px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    margin: 15px 0;
+}
+
+.details1,
+.details2 {
+    width: 100px;
+}
+
+.details p {
+    margin: 5px 0;
+}
+
+.footer {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+}
+
+.footer-logo2 {
+    width: 100px;
+    height: auto;
+}
+
+.footer-section .footer-logo {
+    width: 24px;
+    height: 24px;
+    margin: 0 10px;
+}
+
+.footer-section p {
+    margin: 5px 0;
+}
+
+.footer2 {
+    background-color: #000000;
+    padding: 20px;
+}
+
+.footer-content2 {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.logo-social {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.social-media {
+    display: flex;
+    gap: 1px;
+}
+
+.social-media img {
+    width: 25px;
+    height: 25px;
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 37px;
+}
+
+.contact a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.contact img {
+    width: 20px;
+    height: 20px;
+}
+
+.copy {
+    margin-top: 10px;
+    font-size: 20px;
+    margin-left: 10px;
+    width: 30ch;
+    font-family: monospace;
+    text-wrap: nowrap;
+    overflow: hidden;
+    color: #EFEFEF;
+    animation: typing 2s steps(20) infinite alternate-reverse;
+}
+
+@keyframes typing {
+    from {
+        width: 0ch;
+    }
+
+}
+
+@media (max-width: 767px) {
+    .details {
+        flex-direction: row;
+    }
+
+    .course-info h2 {
+        font-size: 38px;
+        font-weight: 600;
+    }
+
+    .details1,
+    .details2 {
+        width: 48%;
+    }
+
+    .feedback-card {
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+@media (min-width: 768px) {
+    .footer-content2 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .contact {
+        align-items: flex-end;
+        margin-bottom: 0;
+    }
+
+    .logo-social {
+        align-items: flex-start;
+    }
+
+    .details {
+        justify-content: flex-start;
+    }
+
+    .details1,
+    .details2 {
+        width: 200px;
+        margin-right: 4px;
+    }
+
+    .feedback-card {
+        width: 458.12px;
+        height: 300.2px;
+        padding: 15px;
+        margin-left: 6px;
+        font-size: 12px;
+    }
+
+    .feedback-section {
+        margin-left: 6px;
+    }
+
+    #secret {
+        white-space: nowrap;
+    }
+}
+
+@media (min-width: 1024px) {
+    .feedback-card {
+        width: 458.12px;
+        height: 300.2px;
+        padding: 15px;
+        margin-left: 6px;
+        font-size: 12px;
+    }
+
+    .feedback-section {
+        margin-left: 60px;
+    }
+
+    #secret {
+        white-space: nowrap;
+    }
 }
